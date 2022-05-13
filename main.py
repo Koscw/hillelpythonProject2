@@ -34,7 +34,7 @@ all_users = [
 def id_list_outup():
 	id_list = []
 	for i in all_users:
-		id_list.append(i['id'])
+		id_list.append([i['id'],i['name'],i['age']])
     	return id_list
 
 @app.route("/user/<id>")
